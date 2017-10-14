@@ -1,3 +1,6 @@
+# detail about Minecraft Pi Python API at
+# http://www.stuffaboutcode.com/p/minecraft-api-reference.html
+
 import mcpi.minecraft as minecraft
 import mcpi.block as block
 import time
