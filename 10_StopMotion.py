@@ -20,6 +20,7 @@ with picamera.PiCamera() as camera:
     # following infinite loop take photos when button pressed
     while True:
         # next statements do not execute until pin 17 signal falls
+        # which means a button could control the image capture
         GPIO.wait_for_edge(17,GPIO.FALLING)
         camera.capture('/home/pi/stopmotion/frame%03d.jpg' % frame)
         frame+=1
