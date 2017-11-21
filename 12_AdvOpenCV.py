@@ -124,7 +124,7 @@ while(True):
     blur=cv2.GaussianBlur(grey,(3,3),0)
     ret,th=cv2.threshold(blur,15,255,cv2.THRESH_BINARY)
     dilated=cv2.dilate(th,k,iterations=2)
-    contours,hierarchy=cv2.findContours(dilated,cv2.RETR_TREE,cv2.CHAN_APPROX_SIMPLE)
+    contours,hierarchy=cv2.findContours(dilated,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     t2=t0
     cv2.drawContours(t2,contours,-1,(0,255,0),2)
     cv2.imshow('Output',t2)

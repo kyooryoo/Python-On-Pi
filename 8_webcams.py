@@ -29,7 +29,7 @@
 
 # For doing this create script file timelapse.sh under /home/pi/capture
 ## #!/bin/bash
-## DATE=$(date+"%Y-%m-%d_%H%M")
+## DATE=$(date +"%Y-%m-%d_%H%M") # there has to be a space after date
 ## fswebcam -r 1280x960 --no-banner /home/pi/capture/garden_$DATE.jpg
 # make the file timelapse.sh executable using: chmod +x timelapse.sh
 # in terminal open crontab with: crontab -e
